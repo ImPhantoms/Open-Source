@@ -39,7 +39,7 @@ if not rawequal(typeof(getgenv().RiftNotifier), 'table') then --// This is to ma
             return
         end
 
-        local JoinCode = `{"```lua\n"}game:GetService("TeleportService"):TeleportToPlaceInstance({game.PlaceId}, "{game.JobId}", game:GetService('Players').LocalPlayer){"```"}`
+        local JoinCode = `{"```lua\n"}game:GetService("TeleportService"):TeleportToPlaceInstance({game.PlaceId}, "{game.JobId}"){"```"}`
         local JoinLink = `https://www.roblox.com/games/start?placeId={game.PlaceId}&launchData={game.PlaceId}/{game.JobId}`
 
         local Data = {
